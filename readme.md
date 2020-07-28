@@ -59,7 +59,8 @@ chmod - change mode on linux bash - make files executable +x name_of_file
 
 - "top" - shows all the programs running on the system 
 - "ps" shows system information 
-= "chmode" change mode 
+- "chmode" change mode 
+- "cat" (name of the file) returns the content of a file on the terminal 
 
 ### excercise - find out the linux permissions code to assign permission to files 
 
@@ -68,7 +69,6 @@ chmod - change mode on linux bash - make files executable +x name_of_file
 - sudo - temporarily become the superuser
 - chown - change ownership
 - chgrp - change a file's group ownership
-
 
 - chmod +rwx filename - to add permissions
 - chmod +rwx filename - to remove permissions
