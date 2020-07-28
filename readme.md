@@ -84,11 +84,22 @@ chmod - change mode on linux bash - make files executable +x name_of_file
 
 - 777 - no restrictions on permissions, anybody can do anything
 
+config.vm.synced_folder ".", "/home/vagrant/app"
+
+
+### automating vagrantfile 
+- the "." adds all the files in the current directory 
+- Vagrant reload - saves all changes and applies them to the vm 
 
 
 
+### write a provisional script 
 
-
+- how to run a shell script command from environment folder 
+- create a file called a provision.sh 
+- include the commands for install nginx in the script 
+- the syntax for running a bash script from a vagrant file 
+-config.vm.provision "shell", path: "environment/provisions.sh"
 
 
 
