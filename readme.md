@@ -3,7 +3,7 @@
 - to do so we use the sink_files feature in vagrant
 
 ### Error handling 
-- running the vm this morning returned the error that "the vm was creatred with a user that doesnt match the current user 
+- running the vm this morning returned the error that "the vm was created with a user that doesnt match the current user"
 - check hidden files - using the command ls -a 
 - remove .vagrant file
 
@@ -52,9 +52,37 @@ chmod - change mode on linux bash - make files executable +x name_of_file
 - sudo apt-get upgrade
 
 
+## understanding how sinking works with vagrant 
+- changes from the vagrant file affects the app in both the vm and local machine 
+
+## more linux commands 
+
+- "top" - shows all the programs running on the system 
+- "ps" shows system information 
+= "chmode" change mode 
+
+### excercise - find out the linux permissions code to assign permission to files 
+
+- chmod - modify access rights
+- su - temporarily become the superuser
+- sudo - temporarily become the superuser
+- chown - change ownership
+- chgrp - change a file's group ownership
 
 
+- chmod +rwx filename - to add permissions
+- chmod +rwx filename - to remove permissions
+- chmod +x filename - to allow executable permissions 
+- chmod -wx filename - to take out write and executable permissions
 
+### how to change permissions in numeric code 
+- 0 = no permission
+- 1 = execute 
+- 2 = write
+- 3 = read 
+
+
+- 777 - no restrictions on permissions, anybody can do anything
 
 
 
